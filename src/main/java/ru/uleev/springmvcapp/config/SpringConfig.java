@@ -69,7 +69,6 @@ public class SpringConfig implements WebMvcConfigurer {
         dataSource.setUrl(env.getRequiredProperty("hibernate.connection.url"));
         dataSource.setUsername(env.getRequiredProperty("hibernate.connection.username"));
         dataSource.setPassword(env.getRequiredProperty("hibernate.connection.password"));
-
         return dataSource;
     }
 
